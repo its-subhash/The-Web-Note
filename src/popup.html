@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="min-w-64 min-h-64 max-h-[590px] bg-amber-400 text-red-50">
+  <body class="min-w-64 min-h-64 max-h-[590px] bg-amber-400 text-red-50 font-[Rubik, sans-serif] ">
     <div class="add-note flex flex-col gap-[10px] rounded-xl p-[10px]">
-      <textarea
+        <textarea
         name="new-note"
         id="new-note"
         rows="1"
@@ -16,13 +16,20 @@
         autofocus
       ></textarea>
       <div id="bttns" class="flex justify-evenly">
-        <button id="add-note-button" class="w-[3rem] bg-cyan-500 rounded-sm">
-          Add
+        <button type="submit" id="add-note-button" class="block w-max h-max p-1 bg-cyan-500 rounded-sm hover:opacity-70">
+          Add Note
         </button>
-        <button id="dashboard-button" class="w-[6rem] bg-pink-500 rounded-sm">
+        <button id="dashboard-button" class="block w-max h-max p-1 bg-pink-500 rounded-sm hover:opacity-70">
           Dashboard
         </button>
       </div>
+    </div>
+    <div id="notes" class="flex flex-col gap-[10px] p-[10px] overflow-hidden mb-[2rem]">
+      <p class="border-b-2 border-gray text-base">To share my thoughts online and producde some valuable content. at this point i dont even know what am i doing.</p>
+      <p class="border-b-2 border-gray text-base h-max-[100px]">Item 2</p>
+      <p class="border-b-2 border-gray text-base h-max-[100px]">Item 3</p>
+      <p class="border-b-2 border-gray text-base h-max-[100px]">Item 4</p>
+      <p class="border-b-2 border-gray text-base h-max-[100px]">Item 5</p>
     </div>
     <script src="popup.js"></script>
   </body>

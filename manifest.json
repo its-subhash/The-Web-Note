@@ -15,5 +15,13 @@
     "background":{
         "service_worker":"src/background.js"
     },
-    "options_page": "src/dashboard.html"
+    "options_page": "src/dashboard.html",
+    "commands": {
+        "open_extension": {
+          "suggested_key": {
+            "default": "Ctrl+Shift+S"
+          },
+          "description": "The Web Note"
+        }
+      }
 }

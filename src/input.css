@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-display-lexend: "Lexend", "sans-serif";
+  --font-display-rubik:  "Rubik", serif;
   }
+
+  @layer components {
+    .note{
+      border: 2px solid balck;
+    }
+  }
+
+  

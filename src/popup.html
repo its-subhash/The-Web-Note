@@ -4,32 +4,62 @@
     <meta charset="UTF-8" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="min-w-64 min-h-64 max-h-[590px] bg-amber-400 text-red-50 font-[Rubik, sans-serif] ">
-    <div class="add-note flex flex-col gap-[10px] rounded-xl p-[10px]">
-        <textarea
+  <body class="min-w-64 min-h-64 max-h-[590px] text-emerald-950">
+    <div class="w-[100%] h-[100%] background"></div>
+    <div class="add-note flex flex-col p-[10px] gap-[10px] rounded-xl">
+      <textarea
         name="new-note"
         id="new-note"
         rows="1"
         cols="30"
         placeholder="Add Note..."
-        class="min-h-[40px] border-2 border-gray rounded-sm text-lg overflow-hidden text-center focus:outline-none placeholder:text-red-50 placeholder:translate-y-1 "
+        class="min-h-[40px] text-lg text-center border-2 border-blue-50 rounded-3xl overflow-hidden bg-[rgba(255,255,255,0.6)] focus:outline-none focus:bg-[rgba(255,255,255,0.7)] placeholder:text-blue-800 placeholder:translate-y-1 placeholder:font-semibold"
         autofocus
       ></textarea>
       <div id="bttns" class="flex justify-evenly">
-        <button type="submit" id="add-note-button" class="block w-max h-max p-1 bg-cyan-500 rounded-sm hover:opacity-70">
+        <button
+          type="submit"
+          id="add-note-button"
+          class="block w-max h-max p-2 font-medium text-[white] border-2 rounded-3xl border-cyan-500 hover:px-4 hover:shadow-xl hover:shadow-cyan-500/50 hover:bg-cyan-500 transition-all duration-200"
+        >
           Add Note
         </button>
-        <button id="dashboard-button" class="block w-max h-max p-1 bg-pink-500 rounded-sm hover:opacity-70">
+        <button
+          id="dashboard-button"
+          class="block w-max h-max p-2 font-medium text-[white] border-2 rounded-3xl border-pink-500 hover:px-4 hover:shadow-xl hover:shadow-pink-500/50 hover:bg-pink-500 transition-all duration-200"
+        >
           Dashboard
         </button>
       </div>
     </div>
-    <div id="notes" class="flex flex-col gap-[10px] p-[10px] overflow-hidden mb-[2rem]">
-      <p class="border-b-2 border-gray text-base">To share my thoughts online and producde some valuable content. at this point i dont even know what am i doing.</p>
-      <p class="border-b-2 border-gray text-base h-max-[100px]">Item 2</p>
-      <p class="border-b-2 border-gray text-base h-max-[100px]">Item 3</p>
-      <p class="border-b-2 border-gray text-base h-max-[100px]">Item 4</p>
-      <p class="border-b-2 border-gray text-base h-max-[100px]">Item 5</p>
+    <div
+      id="notes"
+      class="flex flex-col gap-[10px] p-[10px] overflow-hidden mb-[2rem]"
+    >
+      <div
+        class="flex justify-between p-2 text-base text-gray-900 border-b-2 bg-gray-50/60 rounded-xl border-gray-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-50/50 transition-all duration-200"
+      >
+        <p id="text1">Priority undefined.</p>
+        <button id="text1Done" class="self-end"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"class="hover:scale-[1.5] trnsition-all duration-200"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button>
+      </div>
+      <div
+        class="flex justify-between p-2 text-base text-gray-50 border-b-2 bg-red-600/60 rounded-xl border-gray-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-500/50 transition-all duration-200"
+      >
+        <p id="text1">Very important.</p>
+        <button id="text1Done" class="self-end"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"class="hover:scale-[1.5] trnsition-all duration-200"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button>
+      </div>
+      <div
+        class="flex justify-between p-2 text-base text-gray-50 border-b-2 bg-amber-500/60 rounded-xl border-gray-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-500/50 transition-all duration-200"
+      >
+        <p id="text1">Kind of important.</p>
+        <button id="text1Done" class="self-end"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"class="hover:scale-[1.5] trnsition-all duration-200"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button>
+      </div>
+      <div
+        class="flex justify-between p-2 text-base text-gray-50 border-b-2 bg-lime-400/60 rounded-xl border-gray-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-lime-400/50 transition-all duration-200"
+      >
+        <p id="text1">Not So important.</p>
+        <button id="text1Done" class="self-end"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed" class="hover:scale-[1.5] trnsition-all duration-200"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button>
+      </div>
     </div>
     <script src="popup.js"></script>
   </body>

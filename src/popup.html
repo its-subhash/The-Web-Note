@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="min-w-64 min-h-64 max-h-[590px] text-emerald-950">
+  <body class="min-w-75 min-h-64 max-h-[590px] text-emerald-950">
     <div class="w-[100%] h-[100%] background"></div>
     <div class="add-note flex flex-col p-[10px] gap-[10px] rounded-xl">
+<<<<<<< HEAD
       <textarea
         name="new-note"
         id="new-note"
@@ -16,6 +17,29 @@
         class="content-center min-h-[40px] font-medium text-lg text-center text-blue-800 border-2 border-blue-50 rounded-3xl overflow-hidden bg-[rgba(255,255,255,0.6)] focus:outline-none focus:bg-[rgba(255,255,255,0.7)] placeholder:text-blue-800 placeholder:font-semibold"
         autofocus
       ></textarea>
+=======
+      <div class="add-note flex p-[10px] gap-[10px] rounded-xl">
+        <textarea
+          name="new-note"
+          id="new-note"
+          rows="1"
+          cols="30"
+          placeholder="Add Note..."
+          class="min-h-[40px] min-w-45 text-lg text-center border-2 border-blue-50 rounded-3xl overflow-hidden bg-[rgba(255,255,255,0.6)] focus:outline-none focus:bg-[rgba(255,255,255,0.7)] placeholder:text-blue-800 placeholder:translate-y-1 placeholder:font-semibold"
+          autofocus
+        ></textarea>
+        <label for="image-input" class="cursor-pointer self-center">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed" class="hover:scale-[1.5] trnsition-all duration-200"><path d="M480-480ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h320v80H200v560h560v-320h80v320q0 33-23.5 56.5T760-120H200Zm40-160h480L570-480 450-320l-90-120-120 160Zm440-320v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"/></svg>
+          <input id="image-input" accept="image/*" type="file" class="hidden">
+        </label>
+      </div>
+      <img
+        id="image-preview"  
+        src=""
+        alt="Image Preview"
+        class="hidden mt-2 max-w-full h-auto rounded-xl"
+      />
+>>>>>>> development
       <div id="bttns" class="flex justify-evenly">
         <button
           type="submit"
@@ -40,27 +64,81 @@
         class="flex justify-between p-2 text-base text-gray-900 border-b-2 bg-gray-50/60 rounded-xl border-gray-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-50/50 transition-all duration-200"
       >
         <p id="text1">Priority undefined.</p>
-        <button id="text1Done" class="self-end"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"class="hover:scale-[1.5] trnsition-all duration-200"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button>
+        <button id="text1Done" class="self-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+            class="hover:scale-[1.5] trnsition-all duration-200 dlt-bttn"
+          >
+            <path
+              d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+            />
+          </svg>
+        </button>
       </div>
       <div
         class="flex justify-between p-2 text-base text-gray-50 border-b-2 bg-red-600/60 rounded-xl border-gray-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-500/50 transition-all duration-200"
       >
         <p id="text1">Very important.</p>
-        <button id="text1Done" class="self-end"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"class="hover:scale-[1.5] trnsition-all duration-200"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button>
+        <button id="text1Done" class="self-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+            class="hover:scale-[1.5] trnsition-all duration-200 dlt-bttn"
+          >
+            <path
+              d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+            />
+          </svg>
+        </button>
       </div>
       <div
         class="flex justify-between p-2 text-base text-gray-50 border-b-2 bg-amber-500/60 rounded-xl border-gray-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-500/50 transition-all duration-200"
       >
         <p id="text1">Kind of important.</p>
-        <button id="text1Done" class="self-end"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"class="hover:scale-[1.5] trnsition-all duration-200"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button>
+        <button id="text1Done" class="self-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+            class="hover:scale-[1.5] trnsition-all duration-200 dlt-bttn"
+          >
+            <path
+              d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+            />
+          </svg>
+        </button>
       </div>
       <div
         class="flex justify-between p-2 text-base text-gray-50 border-b-2 bg-lime-400/60 rounded-xl border-gray-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-lime-400/50 transition-all duration-200"
       >
         <p id="text1">Not So important.</p>
-        <button id="text1Done" class="self-end"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed" class="hover:scale-[1.5] trnsition-all duration-200"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button>
+        <button id="text1Done" class="self-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+            class="hover:scale-[1.5] trnsition-all duration-200 dlt-bttn"
+          >
+            <path
+              d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+            />
+          </svg>
+        </button>
       </div>
     </div>
     <script src="popup.js"></script>
   </body>
 </html>
+
+<!-- undo done -->
